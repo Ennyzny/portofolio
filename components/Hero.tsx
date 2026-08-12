@@ -19,7 +19,7 @@ export default function Hero() {
         <p className="eyebrow mb-6">{profile.tagline}</p>
 
         <h1 className="max-w-3xl font-display text-4xl font-semibold leading-[1.08] tracking-tight text-paper sm:text-6xl">
-          Eniz builds software with the discipline he brings from the dojo.
+          Eniz builds software with precision, discipline, and an eye for detail.
         </h1>
 
         <p className="mt-8 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="h-3 flex-1 bg-ink-800" />
         </div>
 
-        <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-line pt-8">
+        <dl className="mt-12 grid grid-cols-2 gap-6 border-t border-line pt-8">
           {stats.map((stat) => (
             <div key={stat.label}>
               <dt className="sr-only">{stat.label}</dt>
