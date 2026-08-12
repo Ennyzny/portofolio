@@ -1,0 +1,47 @@
+# Eniz Dajić — Portfolio
+
+Lična portfolio stranica, generisana na osnovu CV-a. Next.js 14 (App Router) + TypeScript + Tailwind CSS.
+
+## Pokretanje lokalno
+
+```bash
+npm install
+npm run dev
+```
+
+Otvori [http://localhost:3000](http://localhost:3000).
+
+## Build za produkciju
+
+```bash
+npm run build
+npm run start
+```
+
+## Struktura
+
+```
+app/
+  layout.tsx      → fontovi (Space Grotesk, Inter, JetBrains Mono) + metadata
+  page.tsx         → sastavlja sve sekcije
+  globals.css       → Tailwind + globalni stilovi (belt-stripe motiv, focus stanja)
+components/          → Nav, Hero, About, Experience, Projects, Skills, Education, Contact
+lib/data.ts          → sav sadržaj sa CV-a na jednom mjestu — ovdje mijenjaš tekst
+```
+
+## Šta mijenjati
+
+Skoro sav tekstualni sadržaj (profil, iskustvo, projekti, vještine, obrazovanje, kontakt)
+nalazi se u **`lib/data.ts`** — nema potrebe dirati komponente da bi se ažurirao sadržaj.
+
+## Deploy
+
+Najlakše preko [Vercel](https://vercel.com): poveži repo (ili `vercel` CLI iz ovog foldera)
+i deploy je automatski. Radi i na Netlify, Cloudflare Pages i sličnim platformama.
+
+## Dizajn
+
+Vizuelni motiv je traka pojasa (belt stripe) — nod na crni pojas, 2. dan u karateu — koji se
+provlači kroz hero sekciju, razdjelnike sekcija i dossier karticu. Paleta: tamno mastilo-plava
+pozadina (#0A0C11), zlatni akcent (#DFA94F) i prigušeni teal za tehnički detalj (#57B6A5).
+Fontovi: Space Grotesk (naslovi), Inter (tekst), JetBrains Mono (labele, tagovi, brojevi).
