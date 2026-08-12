@@ -1,6 +1,6 @@
 # Eniz Dajić — Portfolio
 
-Lična portfolio stranica radjena u Next.js 14 (App Router) + TypeScript + Tailwind CSS.
+Lična portfolio stranica radjena sa Next.js 14 (App Router) + TypeScript + Tailwind CSS.
 
 ## Pokretanje lokalno
 
@@ -28,12 +28,6 @@ app/
 components/          → Nav, Hero, About, Experience, Projects, Skills, Education, Contact
 lib/data.ts          → sav sadržaj sa CV-a na jednom mjestu — ovdje mijenjaš tekst
 ```
-
-## Šta mijenjati
-
-Skoro sav tekstualni sadržaj (profil, iskustvo, projekti, vještine, obrazovanje, kontakt)
-nalazi se u **`lib/data.ts`** — nema potrebe dirati komponente da bi se ažurirao sadržaj.
-
 
 ## Dizajn
 
