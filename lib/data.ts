@@ -47,7 +47,7 @@ export const competitions = [
     place: "Central Bosnia Canton, Travnik",
   },
   {
-    period: "May 19, 2023",
+    period: "May 7, 2022",
     name: "IT Challenge, powered by NSoft",
     place: "Maglaj",
   },
