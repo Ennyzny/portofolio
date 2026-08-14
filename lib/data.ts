@@ -4,6 +4,7 @@ export const profile = {
   email: "dajiceniz@gmail.com",
   phone: "063-806-241",
   linkedin: "https://www.linkedin.com/in/eniz-daji%C4%87-209008304/",
+  github: "https://github.com/Ennyzny",
   tagline: "Software Engineering Student",
   summary:
     "Third-year Software Engineering student at the Faculty of Polytechnic Studies, University of Zenica. I build with C#, C++, and the React/Next.js stack, and bring the same discipline I learned on the mat to every sprint — precise work, steady iteration, and a habit of finishing what I start.",

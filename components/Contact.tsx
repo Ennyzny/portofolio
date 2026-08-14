@@ -1,5 +1,5 @@
 import { profile } from "@/lib/data";
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import BeltRule from "./BeltRule";
 
 export default function Contact() {
@@ -41,6 +41,17 @@ export default function Contact() {
             <Linkedin size={18} className="text-gold-400" />
             <span className="font-mono text-sm text-paper/90 group-hover:text-gold-300">
               LinkedIn
+            </span>
+          </a>
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 border border-line p-5 transition-colors hover:border-gold-400/50"
+          >
+            <Github size={18} className="text-gold-400" />
+            <span className="font-mono text-sm text-paper/90 group-hover:text-gold-300">
+              GitHub
             </span>
           </a>
         </div>
