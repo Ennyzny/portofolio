@@ -43,8 +43,8 @@ export default function Hero() {
           </a>
 
           <a
-            href="/EnizDajićCVEng_rew.pdf"
-            download="Eniz-Dajic-CV.pdf"
+            href="/EnizDajic_nCV.pdf"
+            download="EnizDajic_nCV.pdf"
             className="inline-flex items-center gap-2 border border-line px-5 py-3 font-mono text-xs uppercase tracking-[0.14em] text-paper transition-colors hover:border-gold-400 hover:text-gold-300"
           >
             Download CV
