@@ -13,7 +13,7 @@ export default function Contact() {
 
         <BeltRule className="my-10" />
 
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-4">
           <a
             href={`mailto:${profile.email}`}
             className="group flex items-center gap-3 border border-line p-5 transition-colors hover:border-gold-400/50"
