@@ -26,7 +26,7 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Eniz Dajić — Software Engineering Student",
   description:
-    "Portfolio Eniza Dajića — softverski inženjer u razvoju, fokus na C#, C++, React i Next.js. Drugi dan crni pojas u karateu, treća godina Politehničkih studija.",
+    "Portfolio Eniza Dajića — softverski inženjer u razvoju, drugi Dan crni pojas u karateu, treća godina Softverskog inženjeringa.",
 };
 
 export default function RootLayout({

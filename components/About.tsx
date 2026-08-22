@@ -27,7 +27,7 @@ export default function About() {
         <div className="border border-line bg-ink-900 p-6">
           <div className="flex items-center justify-between border-b border-line pb-4">
             <span className="eyebrow">Dossier</span>
-            <span className="font-mono text-[10px] text-muted">No. 002026</span>
+            <span className="font-mono text-[10px] text-muted">No. 220704</span>
           </div>
 
           <dl className="mt-5 space-y-4">

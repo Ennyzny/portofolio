@@ -8,7 +8,6 @@ const links = [
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#education", label: "Education" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export default function Nav() {
@@ -22,6 +21,34 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!href.startsWith("#")) return;
+    const target = document.querySelector(href);
+    if (!target) return;
+    e.preventDefault();
+
+    const headerOffset = 80;
+    const startY = window.scrollY;
+    const targetY =
+      target.getBoundingClientRect().top + startY - headerOffset;
+    const distance = targetY - startY;
+    const duration = 600;
+    let startTime: number | null = null;
+
+    const easeInOutQuad = (t: number) =>
+      t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+    const step = (timestamp: number) => {
+      if (startTime === null) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      window.scrollTo(0, startY + distance * easeInOutQuad(progress));
+      if (progress < 1) requestAnimationFrame(step);
+    };
+
+    requestAnimationFrame(step);
+  };
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
@@ -29,11 +56,15 @@ export default function Nav() {
       }`}
     >
       <div className="mx-auto flex max-w-content items-center justify-between px-6 py-4">
-        <a href="#top" className="flex items-center gap-2 font-mono text-sm text-paper">
+        <a
+          href="#top"
+          onClick={(e) => handleAnchorClick(e, "#top")}
+          className="flex items-center gap-2 font-mono text-sm text-paper"
+        >
           <span className="flex h-8 w-8 items-center justify-center border border-gold-400/60 text-gold-400">
             ED
           </span>
-          <span className="hidden text-muted sm:inline">Ennyzny</span>
+          <span className="hidden text-muted sm:inline">Ennyz</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -41,6 +72,7 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
+              onClick={(e) => handleAnchorClick(e, link.href)}
               className="group relative font-mono text-xs uppercase tracking-[0.14em] text-muted transition-colors hover:text-paper"
             >
               {link.label}
@@ -51,6 +83,7 @@ export default function Nav() {
 
         <a
           href="#contact"
+          onClick={(e) => handleAnchorClick(e, "#contact")}
           className="hidden border border-gold-400/70 px-4 py-2 font-mono text-xs uppercase tracking-[0.14em] text-gold-300 transition-colors hover:bg-gold-400 hover:text-ink-950 md:inline-block"
         >
           Get in touch
@@ -78,12 +111,25 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
-              onClick={() => setOpen(false)}
+              onClick={(e) => {
+                setOpen(false);
+                handleAnchorClick(e, link.href);
+              }}
               className="py-2 font-mono text-sm uppercase tracking-[0.14em] text-muted hover:text-paper"
             >
               {link.label}
             </a>
           ))}
+          <a
+            href="#contact"
+            onClick={(e) => {
+              setOpen(false);
+              handleAnchorClick(e, "#contact");
+            }}
+            className="mt-2 border border-gold-400/70 px-4 py-2 text-center font-mono text-sm uppercase tracking-[0.14em] text-gold-300 hover:bg-gold-400 hover:text-ink-950"
+          >
+            Get in touch
+          </a>
         </nav>
       )}
     </header>

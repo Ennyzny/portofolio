@@ -7,7 +7,7 @@ export const profile = {
   github: "https://github.com/Ennyzny",
   tagline: "Software Engineering Student",
   summary:
-    "Third-year Software Engineering student at the Faculty of Polytechnic Studies, University of Zenica. I build with C#, C++, and the React/Next.js stack, and bring the same discipline I learned on the mat to every sprint — precise work, steady iteration, and a habit of finishing what I start.",
+    "Third-year Software Engineering student at the Faculty of Polytechnic Studies, University of Zenica. Passionate about building practical software, solving problems, and continuously improving my skills through hands-on projects. I bring the same discipline I learned on the mat to every sprint — precise work, steady iteration, and a habit of finishing what I start.",
 };
 
 export const stats = [
@@ -59,6 +59,7 @@ export type Project = {
   subtitle: string;
   description: string;
   tags: string[];
+  link?: string;
 };
 
 export const projects: Project[] = [
@@ -82,7 +83,7 @@ export const projects: Project[] = [
     description:
       "An IT quiz app inspired by the TV format: players register, log in, answer rounds, and climb a leaderboard, with a separate admin panel to manage content.",
     tags: [
-      "React 19",
+      "React",
       "TypeScript",
       "Vite",
       "Tailwind CSS",
@@ -106,6 +107,13 @@ export const projects: Project[] = [
     description:
       "A modern, responsive demo site built for a German company — page structure, reusable components, and cross-device layout, from scratch.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "Plaza",
+    subtitle: "Board game platform for local gaming communities",
+    description:"Party-games launchpad for the crew. Mobile-first hub + isolated game modules.",
+    tags:["Next.js", "TypeScript", "Supabase", "Drizzle", "Tailwind CSS"],
+    link: "https://plaza-games.vercel.app/",
   },
 ];
 
