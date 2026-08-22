@@ -71,13 +71,6 @@ export const projects: Project[] = [
     tags: [".NET MAUI"],
   },
   {
-    title: "GameStore",
-    subtitle: "Web application for online game purchases",
-    description:
-      "A video game storefront built with Spring Boot and server-rendered Thymeleaf templates, backed by MySQL.",
-    tags: ["Java", "Spring Boot", "Thymeleaf", "MySQL", "Maven"],
-  },
-  {
     title: "\u201cWho Wants to Be a Millionaire?\u201d Quiz",
     subtitle: "Full-stack quiz platform",
     description:
