@@ -64,7 +64,7 @@ export default function Nav() {
           <span className="flex h-8 w-8 items-center justify-center border border-gold-400/60 text-gold-400">
             ED
           </span>
-          <span className="hidden text-muted sm:inline">Ennyz</span>
+          <span className="hidden text-muted sm:inline">Ennyzny</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
