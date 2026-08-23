@@ -12,7 +12,7 @@ export const profile = {
 
 export const stats = [
   { value: "3rd", label: "Year, Software Engineering" },
-  { value: "6", label: "Projects" },
+  { value: "5", label: "Projects" },
 ];
 
 export const education = [
