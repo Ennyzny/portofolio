@@ -1,5 +1,7 @@
-import { profile, stats } from "@/lib/data";
+import { profile, stats, projects } from "@/lib/data";
 import { ArrowDownRight, Mail } from "lucide-react";
+
+const allStats = [...stats, { value: String(projects.length), label: "Projects" }];
 
 export default function Hero() {
   return (
@@ -59,7 +61,7 @@ export default function Hero() {
         </div>
 
         <dl className="mt-12 grid grid-cols-2 gap-6 border-t border-line pt-8">
-          {stats.map((stat) => (
+          {allStats.map((stat) => (
             <div key={stat.label}>
               <dt className="sr-only">{stat.label}</dt>
               <dd className="font-display text-2xl font-semibold text-paper sm:text-3xl">
