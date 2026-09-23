@@ -68,6 +68,7 @@ export type Project = {
   tags: string[];
   category: ProjectCategory;
   link?: string;
+  inDevelopment?: boolean;
 };
 
 export const projects: Project[] = [
@@ -128,6 +129,15 @@ export const projects: Project[] = [
     tags: ["Next.js", "React", "TypeScript"],
     category: "personal",
     link: "https://murkee2.github.io/ko-sam-ja-kviz/",
+  },
+  {
+    title: "Salon Booking Platform",
+    subtitle: "White-label booking apps for salons and service businesses",
+    description:
+      "Native booking apps for hair and beauty salons, dental offices, and other service businesses. One Flutter codebase and a multi-tenant backend produce separately branded apps for each client, with a client app, an admin app, and a super-admin console.",
+    tags: ["Flutter", "Dart", "Supabase", "PostgreSQL", "Firebase FCM", "Next.js"],
+    category: "personal",
+    inDevelopment: true,
   },
 ];
 

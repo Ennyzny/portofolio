@@ -17,6 +17,12 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
             Live
           </span>
         )}
+        {project.inDevelopment && (
+          <span className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.08em] text-gold-400">
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-gold-400" />
+            In development
+          </span>
+        )}
         <span className="section-num">{String(index + 1).padStart(2, "0")}</span>
       </div>
 
