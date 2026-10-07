@@ -120,7 +120,7 @@ export const projects: Project[] = [
     description: "Wordle game but with bosnian words.",
     tags: ["Vite", "JavaScript", "Tailwind CSS"],
     category: "personal",
-    link: "https://murkee2.github.io/wordle-ba/",
+    link: "https://wordle-ba.vercel.app/",
   },
   {
     title: "Ko sam ja?",
@@ -128,7 +128,7 @@ export const projects: Project[] = [
     description: "Bosnian quiz game where players guess a person based on clues.",
     tags: ["Next.js", "React", "TypeScript"],
     category: "personal",
-    link: "https://murkee2.github.io/ko-sam-ja-kviz/",
+    link: "https://ko-sam-ja-kviz.vercel.app/",
   },
   {
     title: "Salon Booking Platform",
