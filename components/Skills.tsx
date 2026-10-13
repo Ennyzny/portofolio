@@ -7,7 +7,7 @@ export default function Skills() {
       <div className="mx-auto max-w-content px-6 py-24">
         <SectionHeading index="04" title="Skills" note="Toolbox" />
 
-        <div className="grid gap-8 sm:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {Object.entries(skills).map(([category, items]) => (
             <div key={category} className="border border-line bg-ink-900 p-6">
               <h3 className="font-mono text-xs uppercase tracking-[0.14em] text-gold-400">

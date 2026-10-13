@@ -142,10 +142,9 @@ export const projects: Project[] = [
 ];
 
 export const skills = {
-  Programming: ["C#", "C++", "OOP"],
-  "Web Technologies": ["HTML", "CSS", "React", "Next.js", "TypeScript", "Tailwind CSS"],
-  Databases: ["SQL Server Management Studio", "MySQL"],
-  Tools: ["GitHub"],
+  "Frontend & Mobile": ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "Flutter"],
+  "Other technologies": ["C#", ".NET", "MySQL", "SQL Server", "Supabase"],
+  Tools: ["Git", "GitHub", "Docker"],
 };
 
 export const softSkills = ["Teamwork", "Responsibility", "Communication", "Organization", "Fast learning"];
